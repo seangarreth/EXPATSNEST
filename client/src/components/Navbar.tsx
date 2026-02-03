@@ -46,13 +46,13 @@ export function Navbar() {
                 "font-display font-bold text-xl leading-none",
                 scrolled ? "text-primary" : "text-primary sm:text-white"
               )}>
-                NaijaHost
+                EXPAT’SNEST
               </span>
               <span className={cn(
                 "text-[10px] tracking-widest uppercase font-semibold",
                 scrolled ? "text-muted-foreground" : "text-primary/80 sm:text-white/80"
               )}>
-                Diplomatic Services
+                Nigeria’s Premium Onboarding
               </span>
             </div>
           </Link>

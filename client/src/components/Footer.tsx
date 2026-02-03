@@ -12,10 +12,10 @@ export function Footer() {
               <div className="bg-white/10 p-2 rounded-lg text-white">
                 <Globe className="h-6 w-6" />
               </div>
-              <span className="font-display font-bold text-2xl">NaijaHost</span>
+              <span className="font-display font-bold text-2xl">EXPAT’SNEST</span>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed max-w-xs">
-              Premium onboarding and hospitality services for diplomats and expatriates transitioning to life in Nigeria.
+              Seamless expatriate and diplomatic onboarding into Nigeria.
             </p>
           </div>
 
@@ -60,7 +60,7 @@ export function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-secondary shrink-0" />
-                <span className="text-primary-foreground/80">concierge@naijahost.ng</span>
+                <span className="text-primary-foreground/80">concierge@expatsnest.ng</span>
               </li>
             </ul>
           </div>
@@ -86,7 +86,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-primary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} NaijaHost Hospitality Ltd. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} EXPAT’SNEST Hospitality Ltd. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>

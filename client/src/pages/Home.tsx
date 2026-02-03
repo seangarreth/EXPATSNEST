@@ -32,10 +32,10 @@ export default function Home() {
               <span className="text-secondary font-semibold text-sm tracking-wider uppercase">Premium Diplomatic Services</span>
             </div>
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-              Seamless Transitions to <span className="text-secondary">Nigeria</span>
+              EXPAT’SNEST: Seamless Transitions to <span className="text-secondary">Nigeria</span>
             </h1>
             <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-2xl">
-              We provide end-to-end relocation, security, and concierge services for diplomats and expatriates. Experience Nigeria with confidence and comfort.
+              Seamless expatriate and diplomatic onboarding into Nigeria. We provide end-to-end relocation, security, and concierge services for global leaders.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact">
@@ -154,9 +154,9 @@ export default function Home() {
                       </div>
                     ))}
                   </div>
-                  <div className="text-sm font-bold text-primary">Trusted by Professionals</div>
+                  <div className="text-sm font-bold text-primary">Trusted by Global Leaders</div>
                 </div>
-                <p className="text-xs text-muted-foreground">"The transition was flawless. NaijaHost handled everything with absolute professionalism."</p>
+                <p className="text-xs text-muted-foreground">"The transition was flawless. EXPAT’SNEST handled everything with absolute professionalism."</p>
               </div>
             </div>
 
