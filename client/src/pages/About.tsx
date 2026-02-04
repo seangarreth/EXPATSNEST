@@ -18,13 +18,13 @@ export default function About() {
             <div>
               <h2 className="font-display text-3xl font-bold mb-6 text-primary">Our Story</h2>
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                Founded in 2015, NaijaHost emerged from a simple observation: diplomatic personnel and expatriates often struggled with the initial transition to life in Nigeria due to logistical complexities and cultural nuances.
+                Established in 2024, EXPAT’SNEST was born from a singular, intentional vision: to redefine the onboarding experience for global leaders arriving in Nigeria. We recognized that for diplomats and high-level expatriates, a transition is more than a relocation—it is the foundation of a critical mission.
               </p>
               <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
-                We set out to build a hospitality company that functions less like a travel agency and more like a trusted local partner. Today, we are proud to serve over 12 embassies and numerous multinational corporations.
+                We have crafted EXPAT’SNEST to serve as a premium, discreet, and internationally oriented partner. Our approach transcends standard logistics, offering a sophisticated concierge experience that prioritizes security, cultural fluency, and seamless integration into the Nigerian landscape.
               </p>
               <div className="bg-primary/5 p-6 rounded-xl border-l-4 border-primary italic text-primary/80">
-                "Our goal is to make Nigeria feel like home from the moment you step off the plane."
+                "Our mission is to ensure that Nigeria feels like home from the very first moment, allowing you to focus on your mission with absolute confidence."
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
