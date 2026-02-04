@@ -32,15 +32,15 @@ export default function Home() {
               <span className="text-secondary font-semibold text-sm tracking-wider uppercase">Premium Diplomatic Services</span>
             </div>
             <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-              EXPAT’SNEST: Seamless Transitions to <span className="text-secondary">Nigeria</span>
+              Seamless Expatriate and Diplomatic Onboarding into Nigeria
             </h1>
             <p className="text-xl text-white/90 mb-8 leading-relaxed max-w-2xl">
-              Seamless expatriate and diplomatic onboarding into Nigeria. We provide end-to-end relocation, security, and concierge services for global leaders.
+              Trusted hospitality and relocation support for diplomats, international professionals, and global organisations navigating Nigeria with confidence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact">
                 <Button size="lg" className="bg-secondary text-primary hover:bg-white hover:text-primary font-semibold px-8 py-6 text-lg rounded-xl shadow-lg shadow-black/20 hover:shadow-xl transition-all duration-300">
-                  Request Consultation
+                  Request a Private Consultation
                 </Button>
               </Link>
               <Link href="/services">
