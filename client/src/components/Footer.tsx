@@ -49,18 +49,17 @@ export function Footer() {
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-secondary shrink-0 mt-1" />
                 <span className="text-primary-foreground/80">
-                  1059 Diplomatic Zone,<br />
-                  Central Business District,<br />
-                  Abuja, Nigeria
+                  Abuja, Nigeria<br />
+                  (serving expatriates and diplomatic clients nationwide)
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-secondary shrink-0" />
-                <span className="text-primary-foreground/80">+234 800 000 0000</span>
+                <span className="text-primary-foreground/80">+234 (0) 901 000 0000<br />(consultation by appointment)</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-secondary shrink-0" />
-                <span className="text-primary-foreground/80">concierge@expatsnest.ng</span>
+                <span className="text-primary-foreground/80">info@expatsnest.com</span>
               </li>
             </ul>
           </div>

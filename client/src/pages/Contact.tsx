@@ -55,10 +55,10 @@ export default function Contact() {
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground text-lg">Visit Our Office</h3>
+                    <h3 className="font-bold text-foreground text-lg">Location</h3>
                     <p className="text-muted-foreground mt-1">
-                      1059 Diplomatic Zone, Central Business District<br />
-                      Abuja, Nigeria
+                      Abuja, Nigeria<br />
+                      (serving expatriates and diplomatic clients nationwide)
                     </p>
                   </div>
                 </div>
@@ -68,10 +68,10 @@ export default function Contact() {
                     <Phone className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground text-lg">Call Us</h3>
+                    <h3 className="font-bold text-foreground text-lg">Phone / WhatsApp</h3>
                     <p className="text-muted-foreground mt-1">
-                      +234 800 000 0000<br />
-                      <span className="text-sm text-primary/60">Mon-Fri, 8am - 6pm WAT</span>
+                      +234 (0) 901 000 0000<br />
+                      <span className="text-sm text-primary/60">(consultation by appointment)</span>
                     </p>
                   </div>
                 </div>
@@ -83,8 +83,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold text-foreground text-lg">Email Us</h3>
                     <p className="text-muted-foreground mt-1">
-                      concierge@naijahost.ng<br />
-                      support@naijahost.ng
+                      info@expatsnest.com
                     </p>
                   </div>
                 </div>
