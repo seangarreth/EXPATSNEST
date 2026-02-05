@@ -6,30 +6,50 @@ import { Link } from "wouter";
 export default function Services() {
   const services = [
     {
-      title: "Airport VIP Arrival",
-      desc: "Skip the queues and chaos. Our protocol officers meet you at the airbridge.",
-      features: ["Fast-track immigration", "Porter service", "Secure armored transport", "Welcome pack with local SIM"],
+      title: "Diplomatic Protocol & Arrival",
+      desc: "Distinguished arrival management ensuring a secure and efficient transition from international transit to your domestic residence.",
+      features: [
+        "VIP Fast-Track Immigration Clearance",
+        "Executive Porter & Liaison Services",
+        "Armored Vehicle Logistics",
+        "Initial Essential Communications Pack"
+      ],
       // unsplash luxury car interior or airport lounge
       image: "https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&q=80&w=800"
     },
     {
-      title: "Residential Concierge",
-      desc: "Finding a secure, comfortable home that meets international standards.",
-      features: ["Property search in diplomatic zones", "Lease negotiation", "Generator/Inverter setup", "Staffing (cooks, stewards)"],
+      title: "Executive Residential Advisory",
+      desc: "Strategic placement within premier, high-security diplomatic districts, ensuring residences meet the rigorous standards of international organizations.",
+      features: [
+        "Diplomatic Zone Real Estate Acquisition",
+        "Contractual & Lease Advisory",
+        "Advanced Power Redundancy Solutions",
+        "Professional Household Management Staffing"
+      ],
       // unsplash luxury apartment
       image: "https://images.unsplash.com/photo-1502005229766-939cb9399885?auto=format&fit=crop&q=80&w=800"
     },
     {
-      title: "Cultural Integration",
-      desc: "Understanding Nigeria is key to enjoying it. We help you adapt quickly.",
-      features: ["Cross-cultural training", "City orientation tours", "Language basics (Hausa, Yoruba, Igbo)", "Market visits & shopping guides"],
+      title: "Socio-Cultural Integration",
+      desc: "A bespoke orientation program designed to provide global professionals with the cultural fluency necessary for success in Nigeria.",
+      features: [
+        "Executive Cross-Cultural Briefings",
+        "Tailored Regional Orientation Tours",
+        "Linguistic Competency Programs",
+        "Curated Professional Networking Access"
+      ],
       // unsplash african market art
       image: "https://images.unsplash.com/photo-1548614606-52b4451f994b?auto=format&fit=crop&q=80&w=800"
     },
     {
-      title: "Logistics & Security",
-      desc: "Move around the country with peace of mind.",
-      features: ["24/7 Driver services", "Route planning & security advisories", "Event security", "Emergency response coordination"],
+      title: "Strategic Logistics & Security",
+      desc: "Unparalleled mobility solutions underpinned by professional risk assessment and coordinated emergency response infrastructure.",
+      features: [
+        "Professional Chauffeur & Executive Transport",
+        "Tactical Route Assessment & Advisories",
+        "Secure Event & Personal Protection",
+        "24/7 Rapid Response Coordination"
+      ],
       // unsplash security or suv
       image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=800"
     }
