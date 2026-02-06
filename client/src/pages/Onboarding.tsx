@@ -74,6 +74,14 @@ export default function Onboarding() {
                 </motion.div>
               ))}
             </div>
+
+            <div className="mt-20 text-center">
+              <Link href="/contact">
+                <Button size="lg" className="bg-primary text-white hover:bg-primary/90 px-10 py-7 text-xl rounded-xl shadow-xl shadow-primary/20">
+                  Request a Private Consultation
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

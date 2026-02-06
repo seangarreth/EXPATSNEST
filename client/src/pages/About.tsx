@@ -75,6 +75,20 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      <section className="py-24 bg-primary text-primary-foreground">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="font-display text-4xl font-bold mb-6">Experience Excellence</h2>
+          <p className="text-xl opacity-90 mb-10">
+            Allow us to manage the complexities of your arrival, so you can focus on your mission.
+          </p>
+          <Link href="/contact">
+            <Button size="lg" className="bg-secondary text-primary hover:bg-white hover:text-primary font-bold px-10 py-7 text-xl rounded-xl shadow-xl shadow-black/20">
+              Request a Private Consultation
+            </Button>
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }
