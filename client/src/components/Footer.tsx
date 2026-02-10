@@ -55,7 +55,7 @@ export function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-secondary shrink-0" />
-                <span className="text-primary-foreground/80">+234 (0) 901 000 0000<br />(consultation by appointment)</span>
+                <span className="text-primary-foreground/80">Phone: +2347079991324<br />(consultation by appointment)</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-secondary shrink-0" />
@@ -85,7 +85,10 @@ export function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-primary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} EXPAT’SNEST Hospitality Ltd. All rights reserved.</p>
+          <div className="text-center md:text-left">
+            <p>&copy; 2024 EXPAT’SNEST. All rights reserved.</p>
+            <p className="mt-1">RC No: 9263911 | Registered with the Corporate Affairs Commission (CAC), Nigeria.</p>
+          </div>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
