@@ -43,8 +43,8 @@ export function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className={cn(
-                "font-display font-bold text-xl leading-none",
-                scrolled ? "text-primary" : "text-primary sm:text-white"
+                "font-display font-bold text-xl leading-none bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent",
+                !scrolled && "sm:from-blue-400 sm:to-purple-400"
               )}>
                 EXPAT’SNEST
               </span>

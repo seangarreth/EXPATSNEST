@@ -12,7 +12,7 @@ export function Footer() {
               <div className="bg-white/10 p-2 rounded-lg text-white">
                 <Globe className="h-6 w-6" />
               </div>
-              <span className="font-display font-bold text-2xl">EXPAT’SNEST</span>
+              <span className="font-display font-bold text-2xl bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">EXPAT’SNEST</span>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed max-w-xs">
               Seamless expatriate and diplomatic onboarding into Nigeria.
@@ -86,7 +86,7 @@ export function Footer() {
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-primary-foreground/60">
           <div className="text-center md:text-left">
-            <p>&copy; 2024 EXPAT’SNEST. All rights reserved.</p>
+            <p>&copy; 2024 <span className="font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent inline-block">EXPAT’SNEST</span>. All rights reserved.</p>
             <p className="mt-1">RC No: 9263911 | Registered with the Corporate Affairs Commission (CAC), Nigeria.</p>
           </div>
           <div className="flex space-x-6 mt-4 md:mt-0">
