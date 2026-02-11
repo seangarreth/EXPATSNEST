@@ -14,7 +14,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <span className="font-display font-bold text-2xl bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">EXPAT’SNEST</span>
-                <span className="text-[10px] px-2 py-0.5 rounded border border-white/20 text-white/60 font-bold">RC 9263911</span>
+                <span className="text-[10px] px-2 py-0.5 rounded border border-cyan-400/30 bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent font-bold drop-shadow-[0_0_8px_rgba(34,211,238,0.4)]">RC 9263911</span>
               </div>
             </div>
             <p className="text-sm font-semibold tracking-wider uppercase bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
