@@ -42,15 +42,23 @@ export function Navbar() {
               <Globe className="h-6 w-6" />
             </div>
             <div className="flex flex-col">
+              <div className="flex items-center gap-2">
+                <span className={cn(
+                  "font-display font-bold text-xl leading-none bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent",
+                  !scrolled && "sm:from-blue-400 sm:to-purple-400"
+                )}>
+                  EXPAT’SNEST
+                </span>
+                <span className={cn(
+                  "text-[8px] px-1.5 py-0.5 rounded border border-current font-bold",
+                  scrolled ? "text-primary/60" : "text-primary/60 sm:text-white/60"
+                )}>
+                  RC 9263911
+                </span>
+              </div>
               <span className={cn(
-                "font-display font-bold text-xl leading-none bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent",
-                !scrolled && "sm:from-blue-400 sm:to-purple-400"
-              )}>
-                EXPAT’SNEST
-              </span>
-              <span className={cn(
-                "text-[10px] tracking-widest uppercase font-semibold",
-                scrolled ? "text-muted-foreground" : "text-primary/80 sm:text-white/80"
+                "text-[10px] tracking-widest uppercase font-semibold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent",
+                !scrolled && "sm:from-purple-400 sm:to-blue-400"
               )}>
                 Nigeria’s Premium Onboarding
               </span>
