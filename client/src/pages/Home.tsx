@@ -74,12 +74,13 @@ export default function Home() {
       </section>
 
       {/* Services Highlight */}
-      <section className="py-24 bg-background">
+      <section className="py-24 bg-background relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent opacity-50" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-primary font-semibold tracking-wider uppercase mb-2">What We Do</h2>
-            <h3 className="font-display text-4xl md:text-5xl font-bold text-foreground">Holistic Onboarding Services</h3>
-            <div className="w-24 h-1 bg-secondary mx-auto mt-6 rounded-full"></div>
+            <h2 className="text-primary/70 font-semibold tracking-widest uppercase mb-4 text-sm">What We Do</h2>
+            <h3 className="font-display text-4xl md:text-5xl font-bold text-foreground tracking-tight">Holistic Onboarding Services</h3>
+            <div className="w-16 h-1 bg-secondary/60 mx-auto mt-8 rounded-full shadow-sm"></div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -110,14 +111,15 @@ export default function Home() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="bg-card p-8 rounded-2xl shadow-lg border border-border/50 hover:border-secondary/50 hover:shadow-xl transition-all duration-300 group"
+                transition={{ delay: idx * 0.1, duration: 0.6, ease: "easeOut" }}
+                className="bg-card p-10 rounded-2xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] border border-border/40 hover:border-secondary/30 hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.08)] transition-all duration-500 group relative overflow-hidden"
               >
-                <div className="w-14 h-14 bg-primary/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300 text-primary">
-                  <service.icon className="w-7 h-7" />
+                <div className="absolute top-0 right-0 w-24 h-24 bg-primary/[0.02] rounded-full -mr-12 -mt-12 transition-transform duration-700 group-hover:scale-150" />
+                <div className="w-16 h-16 bg-primary/[0.03] rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-500 text-primary shadow-inner">
+                  <service.icon className="w-8 h-8" />
                 </div>
-                <h4 className="font-display text-xl font-bold mb-3">{service.title}</h4>
-                <p className="text-muted-foreground leading-relaxed">{service.desc}</p>
+                <h4 className="font-display text-2xl font-bold mb-4 tracking-tight">{service.title}</h4>
+                <p className="text-muted-foreground leading-relaxed text-[15px]">{service.desc}</p>
               </motion.div>
             ))}
           </div>

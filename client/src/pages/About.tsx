@@ -46,13 +46,15 @@ export default function About() {
         </div>
       </section>
 
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white/50 relative">
+        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent opacity-30" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-display text-4xl font-bold text-foreground">Our Core Values</h2>
+            <h2 className="text-primary/70 font-semibold tracking-widest uppercase mb-4 text-sm">Our Core Values</h2>
+            <h3 className="font-display text-4xl font-bold text-foreground">Excellence in Every Detail</h3>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {[
               { icon: Target, title: "Excellence", desc: "We deliver nothing short of premium quality in every interaction." },
               { icon: Heart, title: "Hospitality", desc: "Deeply rooted in Nigerian culture, we treat every client as family." },
@@ -61,17 +63,17 @@ export default function About() {
             ].map((value, idx) => (
               <motion.div 
                 key={idx}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: idx * 0.1 }}
-                className="text-center p-6"
+                transition={{ delay: idx * 0.1, duration: 0.5 }}
+                className="text-center group"
               >
-                <div className="w-16 h-16 mx-auto bg-secondary/20 rounded-full flex items-center justify-center text-primary mb-6">
-                  <value.icon className="w-8 h-8" />
+                <div className="w-20 h-20 mx-auto bg-primary/[0.03] rounded-2xl flex items-center justify-center text-primary mb-8 group-hover:bg-primary group-hover:text-white transition-all duration-500 shadow-sm">
+                  <value.icon className="w-10 h-10" />
                 </div>
-                <h3 className="font-display text-xl font-bold mb-3">{value.title}</h3>
-                <p className="text-muted-foreground">{value.desc}</p>
+                <h3 className="font-display text-2xl font-bold mb-4 tracking-tight">{value.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{value.desc}</p>
               </motion.div>
             ))}
           </div>

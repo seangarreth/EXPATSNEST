@@ -66,36 +66,36 @@ export default function Services() {
 
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-32">
+          <div className="space-y-40">
             {services.map((service, idx) => (
-              <div key={idx} className={`flex flex-col ${idx % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-12 items-center`}>
+              <div key={idx} className={`flex flex-col ${idx % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-20 items-center`}>
                 <div className="lg:w-1/2 w-full">
-                  <div className="relative">
-                    <div className={`absolute -inset-4 ${idx % 2 === 0 ? 'bg-primary/5' : 'bg-secondary/10'} rounded-2xl -z-10`}></div>
+                  <div className="relative group">
+                    <div className={`absolute -inset-6 ${idx % 2 === 0 ? 'bg-primary/[0.03]' : 'bg-secondary/[0.05]'} rounded-3xl -z-10 transition-transform duration-700 group-hover:scale-105`}></div>
                     <img 
                       src={service.image} 
                       alt={service.title} 
-                      className="rounded-xl shadow-2xl w-full object-cover h-[400px]"
+                      className="rounded-2xl shadow-2xl w-full object-cover h-[450px] transition-transform duration-700 group-hover:translate-y-[-8px]"
                     />
                   </div>
                 </div>
                 <div className="lg:w-1/2 w-full">
-                  <h3 className="font-display text-3xl font-bold mb-4 text-primary">{service.title}</h3>
-                  <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
+                  <h3 className="font-display text-4xl font-bold mb-6 text-foreground tracking-tight">{service.title}</h3>
+                  <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
                     {service.desc}
                   </p>
-                  <ul className="space-y-4 mb-8">
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5 mb-12">
                     {service.features.map((feature, fIdx) => (
-                      <li key={fIdx} className="flex items-start">
-                        <div className="mt-1 w-5 h-5 rounded-full bg-secondary/20 flex items-center justify-center mr-3 shrink-0">
+                      <li key={fIdx} className="flex items-start group/item">
+                        <div className="mt-1.5 w-5 h-5 rounded-full bg-secondary/15 flex items-center justify-center mr-4 shrink-0 transition-colors group-hover/item:bg-secondary/30">
                           <Check className="w-3 h-3 text-secondary-foreground" />
                         </div>
-                        <span className="text-foreground/80">{feature}</span>
+                        <span className="text-foreground/80 font-medium">{feature}</span>
                       </li>
                     ))}
                   </ul>
                   <Link href="/contact">
-                    <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
+                    <Button variant="outline" size="lg" className="border-primary/20 text-primary hover:bg-primary hover:text-white rounded-xl px-8 transition-all duration-300">
                       Inquire About This Service
                     </Button>
                   </Link>
