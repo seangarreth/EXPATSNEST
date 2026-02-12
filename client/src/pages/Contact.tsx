@@ -70,7 +70,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-bold text-foreground text-lg">Phone / WhatsApp</h3>
                     <p className="text-muted-foreground mt-1">
-                      +234 (0) 901 000 0000<br />
+                      <a href="tel:+2347079991324" className="hover:text-primary transition-colors">+234 707 999 1324</a><br />
                       <span className="text-sm text-primary/60">(consultation by appointment)</span>
                     </p>
                   </div>

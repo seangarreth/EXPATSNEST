@@ -95,10 +95,10 @@ export function Navbar() {
                 "shadow-lg",
                 !scrolled && "bg-white text-primary hover:bg-white/90"
               )}
-              onClick={() => window.location.href = "tel:+2348000000000"}
+              onClick={() => window.location.href = "tel:+2347079991324"}
             >
               <Phone className="mr-2 h-4 w-4" />
-              +234 800 000 0000
+              +234 707 999 1324
             </Button>
           </div>
 
