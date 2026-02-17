@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Mail, MapPin, Phone, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
-import logoPng from "@assets/ChatGPT_Image_Feb_17,_2026,_01_06_53_PM_1771330399482.png";
+import logoPng from "@assets/20260217_131908_1771330875842.png";
 
 export function Footer() {
   return (

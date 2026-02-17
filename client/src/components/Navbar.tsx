@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import logoPng from "@assets/ChatGPT_Image_Feb_17,_2026,_01_06_53_PM_1771330399482.png";
+import logoPng from "@assets/20260217_131908_1771330875842.png";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
