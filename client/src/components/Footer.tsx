@@ -1,5 +1,6 @@
 import { Link } from "wouter";
-import { Globe, Mail, MapPin, Phone, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Mail, MapPin, Phone, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import logoPng from "@assets/ChatGPT_Image_Feb_17,_2026,_01_06_53_PM_1771330399482.png";
 
 export function Footer() {
   return (
@@ -8,9 +9,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="bg-white/10 p-2 rounded-lg text-white">
-                <Globe className="h-6 w-6" />
+            <div className="flex items-center space-x-3">
+              <div className="h-16 w-auto overflow-hidden rounded-lg bg-white/5 p-1">
+                <img src={logoPng} alt="EXPAT’SNEST Logo" className="h-full w-auto object-contain" />
               </div>
               <div className="flex items-center gap-3">
                 <span className="font-display font-bold text-2xl bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">EXPAT’SNEST</span>

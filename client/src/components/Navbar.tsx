@@ -1,8 +1,9 @@
 import { Link, useLocation } from "wouter";
 import { useState, useEffect } from "react";
-import { Menu, X, Globe, Phone } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import logoPng from "@assets/ChatGPT_Image_Feb_17,_2026,_01_06_53_PM_1771330399482.png";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,9 +38,9 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
-            <div className="bg-primary p-2 rounded-lg text-white group-hover:scale-105 transition-transform duration-300">
-              <Globe className="h-6 w-6" />
+          <Link href="/" className="flex items-center space-x-3 group">
+            <div className="relative h-12 w-auto group-hover:scale-105 transition-transform duration-300 overflow-hidden rounded-lg">
+              <img src={logoPng} alt="EXPAT’SNEST Logo" className="h-full w-auto object-contain" />
             </div>
             <div className="flex flex-col">
               <div className="flex items-center gap-2">
