@@ -3,6 +3,7 @@ import { useCreateInquiry } from "@/hooks/use-inquiries";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import { useSEO } from "@/hooks/useSEO";
 import { insertInquirySchema } from "@shared/schema";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
@@ -11,6 +12,14 @@ import { Button } from "@/components/ui/button";
 import { Mail, MapPin, Phone, Loader2 } from "lucide-react";
 
 export default function Contact() {
+  useSEO({
+    title: "Contact Us | EXPAT'SNEST — Begin Your Nigeria Onboarding Journey",
+    description: "Get in touch with EXPAT'SNEST to discuss your expatriate or diplomatic onboarding needs in Nigeria. Call +2347079991324 or email info@expatsnest.com — we're here to help.",
+    canonical: "/contact",
+    ogTitle: "Contact EXPAT'SNEST — Premium Nigeria Onboarding Starts Here",
+    ogDescription: "Reach out to EXPAT'SNEST to plan your seamless relocation to Nigeria. Our experts are ready to tailor a comprehensive onboarding experience for you.",
+  });
+
   const { mutate, isPending } = useCreateInquiry();
 
   const form = useForm<z.infer<typeof insertInquirySchema>>({

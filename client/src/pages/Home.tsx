@@ -2,8 +2,17 @@ import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { ArrowRight, CheckCircle, Shield, Home as HomeIcon, Plane, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function Home() {
+  useSEO({
+    title: "EXPAT'SNEST | Premium Expatriate & Diplomatic Onboarding in Nigeria",
+    description: "EXPAT'SNEST delivers seamless expatriate and diplomatic onboarding into Nigeria. Premium relocation, security logistics, cultural integration, and concierge services for diplomats, international professionals, and global organisations.",
+    canonical: "/",
+    ogTitle: "EXPAT'SNEST — Nigeria's Premier Onboarding Partner for Diplomats & Expatriates",
+    ogDescription: "Navigate Nigeria with confidence. Premium onboarding, relocation, and concierge services tailored for diplomats, international executives, and global organisations.",
+  });
+
   return (
     <div className="overflow-x-hidden">
       {/* Hero Section */}

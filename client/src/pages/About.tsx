@@ -3,8 +3,17 @@ import { motion } from "framer-motion";
 import { Award, Heart, Target, Users } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function About() {
+  useSEO({
+    title: "About Us | EXPAT'SNEST — Nigeria's Trusted Diplomatic Onboarding Specialists",
+    description: "Learn about EXPAT'SNEST (CAC RC No. 9263911), Nigeria's premier expatriate and diplomatic onboarding company. Our mission is to help diplomats, international professionals, and global organisations navigate Nigeria seamlessly.",
+    canonical: "/about",
+    ogTitle: "About EXPAT'SNEST — Our Mission, Vision & Story",
+    ogDescription: "Discover how EXPAT'SNEST became Nigeria's most trusted partner for diplomatic and expatriate onboarding. CAC RC No. 9263911.",
+  });
+
   return (
     <div className="bg-background min-h-screen">
       <PageHeader 

@@ -2,8 +2,17 @@ import { PageHeader } from "@/components/PageHeader";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import { Link } from "wouter";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function Services() {
+  useSEO({
+    title: "Our Services | EXPAT'SNEST — Relocation, Security & Concierge Services in Nigeria",
+    description: "Explore EXPAT'SNEST's full range of services: diplomatic protocol & arrival, executive housing, security logistics, cultural integration, school placement, and ongoing concierge support for expatriates in Nigeria.",
+    canonical: "/services",
+    ogTitle: "EXPAT'SNEST Services — End-to-End Expatriate & Diplomatic Support in Nigeria",
+    ogDescription: "From VIP airport arrivals to long-term concierge support — EXPAT'SNEST offers comprehensive onboarding services designed for diplomats, executives, and global organisations in Nigeria.",
+  });
+
   const services = [
     {
       title: "Diplomatic Protocol & Arrival",

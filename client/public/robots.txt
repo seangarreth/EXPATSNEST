@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://expatsnests.com/sitemap.xml
+
+# Block access to API endpoints
+User-agent: *
+Disallow: /api/

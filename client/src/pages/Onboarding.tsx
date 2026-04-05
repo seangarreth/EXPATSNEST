@@ -3,8 +3,17 @@ import { motion } from "framer-motion";
 import { Calendar, FileText, Home, Plane } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import { useSEO } from "@/hooks/useSEO";
 
 export default function Onboarding() {
+  useSEO({
+    title: "Onboarding Process | EXPAT'SNEST — Your Journey to Nigeria, Simplified",
+    description: "Discover EXPAT'SNEST's structured onboarding timeline — from pre-arrival preparation and airport reception to housing setup, cultural integration, and long-term support across Nigeria.",
+    canonical: "/onboarding",
+    ogTitle: "EXPAT'SNEST Onboarding — A Step-by-Step Journey into Nigeria",
+    ogDescription: "Our proven onboarding process takes you from preparation to full settlement in Nigeria. Designed for diplomats, international professionals, and global organisations.",
+  });
+
   const steps = [
     {
       icon: FileText,
