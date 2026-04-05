@@ -10,6 +10,8 @@ import About from "@/pages/About";
 import Services from "@/pages/Services";
 import Onboarding from "@/pages/Onboarding";
 import Contact from "@/pages/Contact";
+import Blog from "@/pages/Blog";
+import BlogPost from "@/pages/BlogPost";
 
 function Router() {
   return (
@@ -20,6 +22,8 @@ function Router() {
         <Route path="/services" component={Services} />
         <Route path="/onboarding" component={Onboarding} />
         <Route path="/contact" component={Contact} />
+        <Route path="/blog" component={Blog} />
+        <Route path="/blog/:slug" component={BlogPost} />
         <Route component={NotFound} />
       </Switch>
     </Layout>
