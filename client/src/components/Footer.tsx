@@ -1,6 +1,28 @@
 import { Link } from "wouter";
-import { Mail, MapPin, Phone, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
+import { SiFacebook, SiInstagram, SiX } from "react-icons/si";
 import logoPng from "@assets/20260217_131908_1771330875842.png";
+
+const socialLinks = [
+  {
+    href: "https://www.facebook.com/profile.php?id=61588031060169",
+    label: "Follow EXPAT'SNEST on Facebook",
+    Icon: SiFacebook,
+    hover: "hover:bg-[#1877F2]",
+  },
+  {
+    href: "https://instagram.com/expatsnests",
+    label: "Follow EXPAT'SNEST on Instagram",
+    Icon: SiInstagram,
+    hover: "hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#E1306C] hover:to-[#F77737]",
+  },
+  {
+    href: "https://x.com/ExpatsNest_Ltd",
+    label: "Follow EXPAT'SNEST on X (Twitter)",
+    Icon: SiX,
+    hover: "hover:bg-black",
+  },
+];
 
 export function Footer() {
   return (
@@ -72,23 +94,29 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter/Social */}
+          {/* Social */}
           <div>
             <h3 className="font-display font-semibold text-xl mb-6 text-secondary">Connect With Us</h3>
             <p className="text-primary-foreground/80 mb-6">
               Follow our journey and get updates on expat life in Nigeria.
             </p>
-            <div className="flex space-x-4">
-              {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
+            <div className="flex items-center gap-3">
+              {socialLinks.map(({ href, label, Icon, hover }) => (
                 <a
-                  key={i}
-                  href="#"
-                  className="bg-white/10 p-2 rounded-full hover:bg-secondary hover:text-primary transition-all duration-300"
+                  key={href}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className={`group flex items-center justify-center w-10 h-10 rounded-full bg-white/10 border border-white/10 text-primary-foreground/80 transition-all duration-300 hover:text-white hover:scale-110 hover:shadow-lg hover:border-transparent ${hover}`}
                 >
-                  <Icon className="h-5 w-5" />
+                  <Icon className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
                 </a>
               ))}
             </div>
+            <p className="mt-5 text-xs text-primary-foreground/50 leading-relaxed">
+              @expatsnests &bull; @ExpatsNest_Ltd
+            </p>
           </div>
         </div>
 

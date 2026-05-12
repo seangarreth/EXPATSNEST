@@ -10,6 +10,31 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Mail, MapPin, Phone, Loader2 } from "lucide-react";
+import { SiFacebook, SiInstagram, SiX } from "react-icons/si";
+
+const socialLinks = [
+  {
+    href: "https://www.facebook.com/profile.php?id=61588031060169",
+    label: "Follow EXPAT'SNEST on Facebook",
+    Icon: SiFacebook,
+    name: "Facebook",
+    color: "hover:bg-[#1877F2] hover:border-[#1877F2]",
+  },
+  {
+    href: "https://instagram.com/expatsnests",
+    label: "Follow EXPAT'SNEST on Instagram",
+    Icon: SiInstagram,
+    name: "Instagram",
+    color: "hover:bg-[#E1306C] hover:border-[#E1306C]",
+  },
+  {
+    href: "https://x.com/ExpatsNest_Ltd",
+    label: "Follow EXPAT'SNEST on X (Twitter)",
+    Icon: SiX,
+    name: "X / Twitter",
+    color: "hover:bg-black hover:border-black",
+  },
+];
 
 export default function Contact() {
   useSEO({
@@ -95,6 +120,29 @@ export default function Contact() {
                       info@expatsnest.com
                     </p>
                   </div>
+                </div>
+              </div>
+
+              {/* Social Media */}
+              <div className="mt-10 pt-8 border-t border-border/50">
+                <h3 className="font-bold text-foreground text-lg mb-2">Follow Us</h3>
+                <p className="text-muted-foreground text-sm mb-5">
+                  Stay connected for updates on expat life, tips, and news from Nigeria.
+                </p>
+                <div className="flex items-center gap-3">
+                  {socialLinks.map(({ href, label, Icon, name, color }) => (
+                    <a
+                      key={href}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={label}
+                      className={`group flex items-center gap-2.5 px-4 py-2.5 rounded-xl border border-border bg-muted/40 text-foreground text-sm font-medium transition-all duration-300 hover:text-white hover:scale-[1.03] hover:shadow-md ${color}`}
+                    >
+                      <Icon className="h-4 w-4 shrink-0 transition-transform duration-300 group-hover:scale-110" />
+                      <span>{name}</span>
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>
